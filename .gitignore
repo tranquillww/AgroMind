@@ -1,0 +1,52 @@
+# ══════════════════════════════════════════════════════════
+# Eurasia Group — Agro AI Project
+# ЗАЩИТА КОММЕРЧЕСКИХ ДАННЫХ
+# ══════════════════════════════════════════════════════════
+
+# ── John Deere Operations Center данные (КОММЕРЧЕСКИЕ) ──
+# Эти файлы защищены дилерским соглашением с John Deere
+# и НЕ ДОЛЖНЫ распространяться публично
+data/jd/
+data/jd/*.json
+*.json
+
+# Исключения — публичные JSON конфиги (НЕ данные JD)
+# !config.json
+# !package.json
+
+# ── Модели (большие файлы + обучены на коммерческих данных) ──
+models/*.pkl
+models/*.joblib
+models/*.h5
+
+# ── NASA POWER данные (публичные, но большие) ──
+nasa_power_history_5y.csv
+nasa_power_monthly_aggregates.csv
+nasa_power_seasonal_aggregates.csv
+
+# ── NDVI снимки (большие файлы) ──
+NDVI photo/
+ndvi_photo/
+*.tif
+*.tiff
+
+# ── Окружение и кэш ──
+.venv/
+venv/
+__pycache__/
+*.pyc
+*.pyo
+.env
+.env.*
+*.log
+
+# ── IDE ──
+.idea/
+.vscode/
+*.swp
+
+# ── Результаты и временные файлы ──
+results/
+field_dataset.csv
+ndvi_report.pdf
+forecast_*.csv
